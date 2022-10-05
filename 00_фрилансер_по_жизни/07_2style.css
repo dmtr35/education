@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+/* ========================================================== */
+
+
+body {
+
+    background: url(img/линии.png) 50% no-repeat;
+    width: 1000px;
+    height: 700px;
+    background-color: #e8e8e8;
+}
+
+.TRAVEL {
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    text-align: center;
+    /* padding: 20px 0 0 0; */
+    /* font-style: italic; */
+    /* font-size: 10px; */
+    /* color: #666666; */
+    /* letter-spacing: 2px; */
+
+    opacity: 0.6;
+font-family: Arial;
+/* font-size: 14px; */
+line-height: 40px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+color: #273d46;
+}
+
+
+.abzac {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 0 0 0;
+    /* font-style: italic; */
+    font-size: 21px;
+    line-height: 35px;
+    
+}
+.img-top {
+    padding: 40px 0 0 0;
+}
+
+.img {
+    
+    /* height: 45%; */
+    /* width: 500px; */
+    border: 4px solid #fff;
+    background: url(img/Снимок\ экрана\ от\ 2022-05-02\ 23-41-08.png) 0 0/auto 100% no-repeat;
+    /* внутренный отступ блочных тегов */
+    /* padding: 20px; */
+    /* внешний отступ блочных тегов */
+    margin: auto;
+    /* margin-right: 50%; */
+    /* устанавливает ширину блочных тегов */
+    width: 504px;
+    /* устанавливает максимальную ширину блочных тегов */
+    /* max-width: 400px; */
+    /* устанавливает минимальную ширину блочных тегов */
+    /* min-width: 500px; */
+    /* устанавливает высоту блочных тегов(и некоторых строчных) */
+    /* height: 200px; */
+    /* устанавливает максимальную высоту блочных тегов */
+    max-height: 330px;
+    /* устанавливает минимальную высоту блочных тегов */
+    min-height: 330px;
+
+    /* отображает содержимое блочного элемента */
+    /* overflow: visible; */
+    /* скрывает все что находится за пределами блока */
+    /* overflow: hidden; */
+    /* принудительно включает скрол у блока */
+    /* overflow: scroll; */
+    /* подключает скрол только когда они нужны */
+    /* overflow: auto; */
+    /* display: block; */
+    /* border: none; */
+    /*  */
+    /* display: inline; */
+    /* display: none; */
+    
+}
+
+div p {
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    font-family: 'Times New Roman';
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    font-style: italic;
+    /* text-align: center; */
+    padding: 40px 0 0 0;
+    white-space: normal;
+    line-height: 25px;
+    color: #273d46;
+}
+
+.list {
+    padding: 40px 0 40px 0
+}
+.list li{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    /* font-style: italic; */
+    white-space: normal;
+    line-height: 25px;
+    /* color: #000; */
+}
+
+.list li::before {
+    content: '';
+    background: url(img/1639194261_3-papik-pro-p-galochka-klipart-3.png) left/auto 50% no-repeat;
+    width: 10px;
+    height: 20px;
+    display: inline-block;
+    /* border: 1px solid #000; */
+    margin:  0 10px 0 0;
+    /* font-weight: 700; */
+    /* padding: 1px; */
+}
+.list li:hover::before {
+    content: '';
+    background: url(img/1639194261_3-papik-pro-p-galochka-klipart-3.png) left/auto 50% no-repeat;
+    width: 10px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #000;
+    margin:  0 10px 0 0;
+    /* font-weight: 700; */
+    /* padding: 1px; */
+}
+
+
+
+/* .list li:hover {
+    border: 1px solid #80b7b3;
+    color: #273d46;
+} */
+
+.one{
+    font-family: Arial;
+/* font-size: 20px; */
+line-height: 36px;
+font-weight: 400;
+text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+color: #273d46;
+}
+
+.two{
+    font-family: Arial;
+/* font-size: 20px; */
+line-height: 36px;
+font-weight: 400;
+font-style: italic;
+color: #80b7b3;
+}
+.three{
+    font-family: Arial;
+/* font-size: 20px; */
+line-height: 36px;
+font-weight: 700;
+color: #273d46;
+}
+.four{
+    color: #273d46;
+    text-decoration: line-through;
+    opacity: 0.3;
+    font-family: Arial;
+
+}
+
+
+.butt {
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    /* text-align: left; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    /* font-style: italic; */
+    /* text-align: center; */
+    padding: 40px 0 40px 0;
+    /* white-space: normal; */
+    /* line-height: 25px; */
+    /* color: #696969; */
+}
+.submit {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #008080;
+    width: 130px;
+    height: 30px;
+    border-radius: 57px 57px 57px 57px;
+    /* border: 2px solid #000; */
+    /* padding: 0 35px 0px 0; */
+}
+
+
+.submit::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 10px;
+    background: url('img/стрелка_red.png') 50% 0 no-repeat;
+
+    /* margin: 0px 0px 0px 30px; */
+}
+
+
+
+
+
+
+.submit:hover {
+    /* content: ''; */
+    border: 1px solid #000;
+    background-color: #273d46;
+}
+
+
+
+

@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+/* ========================================================== */
+
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+
+
+/* .wrapper {
+    height: 100%;
+    overflow: hidden;
+    min-height: 100%;
+    padding: 50%;
+} */
+
+
+.block {
+    /* text-align: center; */
+		
+}
+
+
+.block__row {
+    /* флекс контейнер остается блочным*/
+    display: flex;
+    /* контейнер перестает занимать всю ширину области */
+    /* display: inline-flex; */
+    /* flex-start все флекс элементы распологаются в начале (flex-end в конце) контейнера */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* распределяет элементы (пространство между элементами одинаковое)*/
+    /* justify-content: space-between; */
+    /* распределяет элементы (пространство между всеми элементами одинаковое)*/
+    /* justify-content: space-around; */
+
+    /* все флекс элементы подстраиваются под самый высокий блок */
+    /* align-items: stretch; */
+    /* flex-start отменит резиновость и прижмет элементы */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* выстраивает по базовой линии все флекс-элементы */
+    /* align-items: baseline; */
+
+    /* перескакивают на навую строку ( по умолчанию nowrap)*/
+    /* flex-wrap: wrap; */
+    /* перекатываться на новую строку в обратном порядке */
+    /* flex-wrap: wrap-reverse; */
+
+    /* устанавливает основную ось по которой выстраиваются флекс элементы */
+    /* flex-direction: row; */
+    /* элементы разворачиваются и стартуют с конца */
+    /* flex-direction: row-reverse; */
+
+    /* выстраивает элементы в колонку.  */
+    flex-direction: column;
+    flex-direction: column-reverse;
+    /* stretch по умолчанию на всю ширину контейнера (justify-content по основной оси, вертикали. align-items управляет элементами второстепенной оси, по горизонтали)*/
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+    /* justify-content: space-between; */
+
+
+    height: 700px;
+
+
+    border: 20px solid #ece89d;
+    margin: 0 0 20px 0;
+}
+
+.block__column {
+    border: 20px solid #5e5373;
+}
+
+.block__item {
+    background-color: #18b5a4;
+    padding: 30px 50px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+    
+
+.block__item1 {
+    padding: 20px 50px;
+}
+.block__item3 {
+    padding: 20px 50px;
+}
+
+.block__column {
+    border: 20px solid #5e5373;
+    text-align: center;
+    /* управляет базовым размером флекс элемента */
+    /* flex-basis: auto; */
+    /* flex-basis: 300px; */
+    /* возможности увеличиваться в размере флекс элементу (запрещено увеличиваться больше чем flex-basis)*/
+    /* если "1" увеличивается на влю ширину флекс блока */
+    /* flex-grow: 1; */
+    /* контролирует может ли флекс элемент становиться меньше чем указаный flex-basis ("1" могут становиться меньше, "0" - не могут)*/
+    /* flex-shrink: 0; */
+    /* запись для применения трех предыдущих свойств(grow, shrink, basis) */
+    /* flex: 0 1 auto; */
+}
+
+.block__column1 {
+    /* преопределяет выравнивание (переписывает ранее даное значение)*/
+    /* align-self: flex-start; */
+    /* порядок вывода элементов */
+    order: 3;
+}
+
+.block__column2 {
+    /* порядок вывода элементов */
+    order: 2;
+    /* блок растягивается на всю ширину области */
+    flex: 1 1 auto;
+
+}
+
+.block__column3 {
+    /* преопределяет выравнивание (переписывает ранее даное значение)*/
+    /* align-self: flex-end; */
+    /* порядок вывода элементов */
+    order: 1;
+}
+
+
+
+
+
+
+
+
+
+

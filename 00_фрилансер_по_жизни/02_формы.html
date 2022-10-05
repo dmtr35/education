@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- оболочка form. отвечает за передачу данных.обезательный атрибут action(адрес сервера)
+    method: get - передача в адресной строке.видны всем пользователям. 
+    post - скрытая передача данных(используется со сначением enctype="multipart/form-data") -->
+    <form action="#" method="post" enctype="multipart/form-data"></form>
+    <div>
+        <!-- placeholder задаем подпись поля -->
+        <!-- disabled заблокированное поле ввода -->
+        <!-- tabindex порядок перехода между элементами при нажатии на tab -->
+        <input disabled placeholder="подпись поля" type="text" name="username" value="">
+    </div>
+    <div>
+        <input tabindex="1" type="password" name="username" value="">
+    </div>
+    <div>
+        <!-- круглые точки. или то или то. checked по умолчанию. -->
+        <p><input checked type="radio" name="beer" value="lager">светлое пиво</p>
+        <p><input type="radio" name="beer" value="dark">темное пиво</p>
+    </div>
+    <br>
+    <div>
+        <!-- tabindex порядок перехода между элементами при нажатии на tab. tabindex для радио должны быть одинаковыми -->
+        <p><input tabindex="2" type="radio" name="beer2" value="lager">светлое пиво</p>
+        <p><input tabindex="2" type="radio" name="beer2" value="dark">темное пиво</p>
+    </div>
+    <br>
+    <div>
+        <!-- квадратные чеки, checked отображение по умолчанию -->
+        <p><input checked type="checkbox" name="car" value="yes">наличие автомобиля</p>
+        <p><input checked type="checkbox" name="car2" value="yes">наличие автомобиля2</p>
+        <p><input type="checkbox" name="car3" value="yes">наличие автомобиля3</p>
+        <p><input type="checkbox" name="car4" value="yes">наличие автомобиля4</p>
+    </div>
+    <div>
+        <!-- загрузчик файлов выберите файл -->
+        <p><input class="custom-file-input" checked type="file" name="foto"></p>
+    </div>
+
+    <script>
+    document.querySelector('.btn').addEventListener("click", function() {
+    let file = document.querySelector('.custom-file-input').files[0]
+    let reader = new FileReader()
+
+    reader.readAsText(file)
+    reader.onload = function() {
+        console.log(reader.result);
+        
+    }
+    })
+    </script>
+
+    <br>
+    <div>
+        <textarea name="text"></textarea>
+    </div>
+    <div>
+        <!-- выпадающее меню. атрибут multiple в select - множественный выбор -->
+        <select name="color" id="">
+            <option value="red">красный</option>
+            <!-- selected отобразит этот элемент по умолчанию -->
+            <option selected value="black">черный</option>          
+            <option value="pink">розовый</option>
+        </select>
+    </div>
+    <div>
+        <!-- submit - при нажатии на кнопку вся форма, все поля отправятся на сервер.
+        reset - вся форма очистится -->
+        <button class="btn" type="submit">отправить</button>
+    </div>
+</body>
+</html>

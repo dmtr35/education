@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    /* width: 100%; */
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* ========================================================== */
+
+
+
+
+
+
+
+body {
+    padding: 50px;
+}
+
+
+
+.content h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+
+
+
+.grit__body {
+    display: grid;
+
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 33.333% 33.333% 33.333%; */
+    /* grid-template-rows: 200px 300px; */
+
+
+    /* minmax от 150px до 200px будет варироваться средняя колонка */
+    /* grid-template-columns: 200px minmax(150px, 200px) 300px; */
+    /* grid-template-rows: 1fr 1fr; */
+
+    /* колонка подстраивается под контент */
+    /* grid-template-columns: auto 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+    
+    /* можем ограничивать ширину */
+    /* grid-template-columns: fit-content(100px) 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+    
+    /* упрощеная запись если колонки одинаковые (количество колонок, размер)*/
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+
+
+
+}
+
+
+.grid__item {
+    text-align: center;
+    border: 2px dashed #000;
+    padding: 30px;
+}
+
+/* ====================================================================== */
+
+
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
+.grid-wrapper{
+    display: grid;
+
+    grid-template: 
+        [start] "header header" 100px [row2]
+        [row] "side content" 1fr [row-and] / 150px 1fr
+
+    /* grid-template-columns: 150px 1fr; */
+    /* grid-template-rows: 100px 1fr; */
+    /* пишем сетку столбец header занимает 2 верхних ячейки, внизу side content по одной */
+    /* grid-template-areas:  */
+    /* "header header" */
+    /* "side content"; */
+}
+
+
+.grid-header {
+
+}
+
+.grid-header,
+.grid-side,
+.grid-content {
+    padding: 30px;
+    border: 2px dashed #000;
+    margin: 0 0 15px 0;
+}
+
+
+.grid-header {
+    grid-area: header;
+}
+.grid-side{
+    grid-area: side;
+}
+.grid-content {
+    grid-area: content;
+}
+
+/* ================================================================ */
+
+
+
+
+.grit-auto {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    /* чтобы управлять высотой неявного ряда используем */
+    grid-auto-rows: 200px;
+    /* когда не задана явная сетка (для элементов которые не обьявлена)*/
+    /* grid-auto-columns: 300px; */
+
+    /* автоманическое размещение (row - в ряд. column - в колонки. dense - будет изменять пространство чтобы заполнить колонки) */
+    grid-auto-flow: dense;
+
+    counter-reset: item;
+}
+
+
+.grit-auto__item {
+    text-align: center;
+    border: 2px solid #000;
+    padding: 30px;
+    font-size: 30px;
+}
+
+
+/* .grid-masonry_item_5 {
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+
+
+
+/* ========================================================== */
+
+
+
+
+.grit__body_2 {
+    display: grid;
+
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+
+    /* отступы между колонок */
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+
+.grid__item_1 {
+    grid-row: 1 / 2;
+    /* grid-row-end: auto; */
+    grid-column: 1 / 2;
+    /* grid-column-end: auto; */
+    
+    /* background-color: #794f45; */
+    order: 1;
+}
+
+.grid__item_2 {
+    order: 2;
+}
+
+.grid__item_3 {
+    order: 3;
+}
+
+.grid__item_4 {
+    order: 4;
+}
+
+.grid__item_5 {
+    order: 5;
+}
+
+.grid__item_6 {
+    order: 6;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* ========================================================= */
+
+.arial {
+    /* список шрифтов */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.fontsize30 {
+    /* размер шрифта элемента */
+    font-size: 30px;
+}
+.italic {
+    /* определяет начертание шрифта (обычный, курсивный, наклонный)*/
+    font-style: italic;
+}
+.font700 {
+    /* насышенность шрифта, жирный */
+    font-weight: 700;
+}
+.textright {
+    /* определяет горизонтальное выравнивание текста */
+    /* text-align: right; */
+    /* розтягивает текст на всю ширину окна */
+    /* text-align: justify; */
+    /* текст по центру */
+    text-align: center;
+}
+.decoration {
+    /* добавляет оформление текста */
+    /* подчеркнутый */
+    /* text-decoration: underline; */
+    /* линии над текстом */
+    /* text-decoration: overline; */
+    /* зачеркнутый текст */
+    text-decoration: line-through;
+    /* уберет любой эфект */
+    /* text-decoration: none; */
+}
+.shadow {
+    /* добавляет тень к тексту */
+    /* смещение по горизонтали, вертикали,размер размытия тени, цвет */
+    text-shadow: 1px 1px 1px #000;
+}
+.uppercase {
+    /* преобразование в заглавные или прописные символы */
+    /* каждая первая буква в слове заглавная */
+    text-transform: capitalize;
+    /* в нижный регистр */
+    text-transform: lowercase;
+    /* все в верхний регистр */
+    text-transform: uppercase;
+    /* возвращает в обычное состояние */
+    text-transform: none;
+}
+.ident {
+    /* величина отступа первой строки блока текста */
+    text-indent: 50px;
+}
+.lspace {
+    /* интервал между символами */
+    letter-spacing: 5px;
+    /* растояние между строками */
+    line-height: 25px;
+}
+.wspace {
+    /* интервал между словами */
+    word-spacing: 10px;
+}
+.whitespace {
+    /* управляет пробелами между словами */
+    /* делает в одну строку без переноса */
+    white-space: nowrap;
+    white-space: normal;
+}
+.lineheight {
+    /* устанавливает межстрочный интервал текста */
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+

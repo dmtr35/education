@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    /* width: 100%; */
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+/* ==================================================== */
+
+.block {
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+
+
+
+.button{
+
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    min-height: 60px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    }
+    
+    /* стили для конкретной кнопки */
+    .button_1{
+    color: #fff;
+    background-color: #5e5373;
+    box-shadow: 0 5px 0px #3c354a;
+    /* анимировать */
+    transition-duration: 1s, 500ms, 500ms;
+    /* можем указать конкретное свойство которое хотим анимировать (all - все свойства)*/
+    transition-property: box-shadow, top, background-color;
+    /* задержка */
+    transition-delay: 0.5s, 0.5s, 0s;
+    /* задает стиль перехода */
+    transition-timing-function: ease;
+    }
+    
+    .button_1:hover{
+    top: 2px;
+    box-shadow: 0 3px 0px #3c354a;
+    background-color: #18b5a4;
+    }
+
+
+
+/* ========================================================================= */
+
+
+
+
+
+
+.wrapper {
+padding: 50px;
+background-color: #5e5373;
+height: 100px;
+
+}
+
+.content {
+
+}
+
+
+.content__circle {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+
+    animation-name: white-circle;
+    /* время анимации (продолжительность) */
+    /* animation-duration: 1s; */
+    /* задает сценарий развития анимации между ключевыми кадрами */
+    /* animation-timing-function: linear; */
+    /* количество повторов ключевых кадров (infinite - бесконечно) */
+    animation-iteration-count: 1;
+    /* каждый четный проход будет проигрываться в обратную сторону */
+    animation-direction: alternate;
+    /* каждый не четный проход будет проигрываться задом наперед */
+    /* animation-direction: alternate-reverse; */
+    /* задом наперед */
+    /* animation-direction: reverse; */
+    /* остановить анимацию по заданому собитию */
+    animation-play-state: running;
+    /* задержка анимации (можно указывать несколько значений)*/
+    /* animation-delay: 1s; */
+    /* определяет какие значения применятся после завершения анимации (none по умолчанию) */
+    /* тобишь остается в конечном положении */
+    animation-fill-mode: forwards;
+
+    /* краткая запись. записать все свойства в одну строку */
+    animation: white-circle 1s linear infinite alternate 0s forwards, red-circle 1s linear infinite alternate 0s forwards;
+}
+
+
+@keyframes white-circle {
+    0% {
+        width: 100px;
+        height: 100px;
+        left: 0;
+        background-color: #fff;
+    }
+    100% {
+        /* width: 200px; */
+        /* height: 200px; */
+        left: 200px;
+        background-color: red;
+    }
+}
+@keyframes red-circle {
+    0% {
+        width: 100px;
+        height: 100px;
+        left: 0;
+        background-color: #fff;
+    }
+    100% {
+        /* width: 200px; */
+        /* height: 200px; */
+        left: 200px;
+        background-color: red;
+    }
+}
+
+.content:hover .content__circle{
+    /* ставим на паузу анимацию */
+    /* animation-play-state: paused; */
+    /* сбросить на стартовую позицию */
+    /* animation-name: none; */
+}
+
+
+

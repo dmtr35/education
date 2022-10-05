@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+/* ========================================================== */
+
+
+
+.example-block {
+    /* внутренный отступ блочных тегов */
+    /* padding: 20px; */
+    /* внешний отступ блочных тегов */
+    margin: 0 0 30px 0;
+    /* устанавливает ширину блочных тегов */
+    /* width: 500px; */
+    /* устанавливает максимальную ширину блочных тегов */
+    /* max-width: 400px; */
+    /* устанавливает минимальную ширину блочных тегов */
+    /* min-width: 500px; */
+    /* устанавливает высоту блочных тегов(и некоторых строчных) */
+    /* height: 200px; */
+    /* устанавливает максимальную высоту блочных тегов */
+    /* max-height: 50px; */
+    /* устанавливает минимальную высоту блочных тегов */
+    /* min-height: 200px; */
+
+    /* отображает содержания блочного элемента */
+    /* overflow: visible; */
+    /* скрывает все что находится за пределами блока */
+    /* overflow: hidden; */
+    /* принудительно включает скрол у блока */
+    /* overflow: scroll; */
+    /* подключает скрол только когда они нужны */
+    /* overflow: auto; */
+
+    /*  */
+    /* display: inline; */
+    /* display: none; */
+
+
+
+
+    border: 2px solid #000;
+}
+
+
+.example-string {
+    display: block;
+    /* display: inline-block; */
+    /* width: 500px; */
+    /* padding: 20px; */
+    /* border: 2px solid #000; */
+}
+
+.example-image {
+    width: 100%;
+    /* min-width: 500px; */
+    /* height: 200px; */
+    /* min-height: 20px; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+/* ========================================================== */
+
+
+
+.example-block {
+    /* линия вокруг блока, только для всех сторон, с внешней стороны блока */
+    /* outline: 10px solid; */
+    /* 1px - толщина граници, solid, dotted, dashed - стиль границы, цвет */
+    /* border: 3px solid #000; */
+    /* убрать границу с одной стороны(работают в паре) */
+    /* border-left: none; */
+    /* border-bottom: 3px solid #000; */
+    /* закругление углов */
+    /* border-radius: 50%; */
+    /* border-radius: 57px 57px 57px 57px; */
+    /* тень к элементу(сдвиг по горизонтали, по рертикали, радиус тени, растояние тени, цвет) inset - тень в нутрь блока*/
+    /* box-shadow: 5px 5px 10px 5px #000, inset 5px 5px 5px 1px #000; */
+    /* определяет уровень прозрачности элемента (от 0 до 1)*/
+    /* opacity: 0; */
+    /* для отображения или скрытия блока (visible по умолчанию, hidden скроет блок) с блоком нельзя взаемодействывать*/
+    visibility: hidden;
+
+
+
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.example-string {
+    outline: 3px solid #000;
+    
+    
+}
+
+.example-image {
+    width: 80%;
+    border: 1px dashed #000;
+    border-radius: 5%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

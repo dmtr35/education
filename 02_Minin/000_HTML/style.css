@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+/*обратиться ко всем элементам*/
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+
+    /* размер шрифта */
+    font-size: 16px;
+    /* жирность шрифта */
+    font-weight: normal;
+    /* шрифт, первое название шрифта которое мы хотим видеть, если его нет то следующий */
+    font-family: 'Roboto', sans-serif;
+
+
+    /* font: normal 16px 'Roboto', sans-serif;    */
+    /* можно в укороченой записи задать жирность, размер, шрифт */
+}
+/*-------------------------------------------------------------------*/
+a {                                                   /*ссылки*/
+    color: #000;
+    text-decoration: none;                            /*не подчеркивались*/
+}
+a:hover {                                            /*обработать событие когда навидится мышка*/
+    text-decoration: underline;                      /*подчеркивать ссылку когда мышка наведена*/
+}
+a:active {                                            /*обработать событие при нажатии на ссылку*/
+    color: blue;                                    /*меняет цвет если нажать и держать*/
+}
+a:visited {                                            /*если ссылку уже посещали, меняет цвет*/
+    color: grey;
+}
+/*----------------------------------------------------------------------*/
+
+/*если обращаемся к class ставим точку*/
+.avatar {
+    width: 250px;                              /*ширина*/
+    border-radius: 16px;                       /*как скругляются границы блока*/ 
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.pip {
+    font-style: italic;                 /*наклонный текст*/ 
+}
+
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {         /*для сдвига экрана*/
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+
+.info-text {
+    margin-left: 40px;
+}
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+
+.info a {
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: #86898f;
+    margin: 50;
+    text-decoration: none;               /*подчеркнутый текст*/  
+    /*text-transform: lowercase;           все в нижнем регистре*/ 
+    /*text-transform: uppercase;           все в верхнем регистре*/ 
+    /*text-transform: capitalize;          каждое слово с большой буквы*/ 
+    letter-spacing: 1px;                 /*количество символов между буквами*/
+    word-spacing: 3px;                   /*количество символов между словами*/
+}
+
+/*! Box Modal*/
+
+.conteiner {
+    max-width: 93%;                       /*ширина родительского контейнера*/
+    margin: auto;                          /*отцентровать по центру*/
+    padding-top: 20px;
+}
+
+/* .social { */
+    /* background: green; */
+    /*padding: 10px;                        отступ от края блока*/ 
+    /*padding: 10px 40px 15px 5px;          можем задать отступ для каждой из сторон отдельно*/
+    /* padding-top: 15px; */
+    /* padding-right: 40px; */
+    /* padding-bottom: 15px; */
+    /* padding-left: 5px; */
+    /* margin: 20px;                         внешний отступ, можно настраивать так же как и padding  */
+
+
+    /* border: 5px solid red;                ширина граници, стиль граници, цвет граници  */
+    /* border-bottom-style: dotted;            задаем стиль ширине нижней граници(в точку)  */
+    /* border-top-width: 10px;                 ширина верхней граници  */
+    /* border-left-color: blue;              цвет левой граници  */
+/* } */
+
+/* .box-mode > div{                           */
+    /*> div - только вложеные div(без вложеных во вложенные)*/
+    /* float: left; */
+    /* background: #000; */
+    /* height: 80px; */
+    /* border: 4px solid red; */
+    /* width: 25%; */
+    /* box-sizing: border-box;                */
+    /*ширина родительского контейнера*/   
+/* } */
+
+
+.bg-yellow {
+    background: #fff9dc;
+}
+.bg-green {
+    background: #e5ffe7;
+}
+.bg-red {
+    background: #ffe5e5;
+}
+
+
+.card{
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 16px                                   /*скругления, закругления*/
+
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+
+.list {
+    padding: 1px 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.table {
+    width: 100%;
+}
+.table td {
+    padding-bottom: 10px;
+}
+/*псевдоселектор, и выбираем какой элемент по порядку нам необходимо выбрать(можем применить один стиль к разным селекторам)*/
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color:grey;
+}
+
+/*even - каждая четная строчка*/
+/*odd - каждая нечетная строчка*/
+/* .table tr:nth-child(odd) {            
+    background: red;
+} */
+
+.link-list {
+    list-style: square;
+    padding-left: 15px;
+}
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.contact h3 {
+    text-align: center;
+}
+
+/*форма*/
+
+.form-group label {
+    display: block;                               /*элементы не в сторчку, а в столбик*/
+    font-size: 14px;
+    color: #86898f;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;                               /*элементы не в сторчку, а в столбик*/
+    box-sizing: border-box;
+    border: none;                              /*убрали границы*/
+    background: transparent;                   /*цвет родителя*/
+    border-bottom: 1px solid #ccc;           /*ставим свои границы*/
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;                             /*когда тыкаем на форму, нет границ*/
+    font-family: inherit;                 /*шрифт наследуется тот который мы используем*/
+}
+
+
+.row {
+    display: flex;                          /*два элемента теперь на одной строчке*/
+    margin-bottom: 20px;
+}
+.row > .form-group {                        /*row > далее обратиться к from-group*/
+    width: 50%;                             /*ширина from-group 50%*/
+    margin-right: 20px
+}
+.row > .form-group:first-child {
+
+}
+
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;                              /*будет меняться курсор при наведении*/
+
+}
+
+.btn:hover {                                     /*добавляем псевдоселектор*/
+    opacity: 0.9;                                /*при наведении меняется состояние кнопки*/
+}
+
+
+
+/*position по умолчанию у каждого элемента static*/
+
+/* .position {
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+} */
+
+/*когда мы задаем position: absolute или fixed  нам открывается 4 новых свойства. top, left, bottom, right */
+/*элементы с position: absolute позиционируется относительно нашего окна*/
+/* .box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    top: 150px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: lightcoral; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
